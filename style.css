@@ -6,7 +6,9 @@
 a{
     text-decoration: none;
 }
-
+body{
+    overflow-x: hidden;
+}
 li{
     list-style: none;
 }
@@ -14,7 +16,7 @@ video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     z-index: -1;
@@ -68,13 +70,11 @@ nav ul li{
 #check{
     display: none;
 }
-
-@media (max-width: 952px){
-    nav{
-        /* background: none; */
-    }
+/* For Mobile View */
+@media (max-width: 950px){
     .checkbtn{
         display: block;
+        margin-right: 20px;
     }
 
     ul{
@@ -98,9 +98,19 @@ nav ul li{
     #check:checked ~ ul{
         left: 0;
     }
+
+    .about-us .title1{
+        text-align: center;
+        font-size: 16px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-@media (min-width:858px){
+
+/* For PC View */
+/* @media (min-width:858px){
     .logo img{
         height: 90px;
         width: 90px;
@@ -108,4 +118,61 @@ nav ul li{
     .navItems{
         font-size: 16px;
     }
-} 
+}  */
+
+.about-us{
+    margin-top: -5px;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
+    height: 550px;
+}
+.about-us .title1{
+   font-family: 'Noto Sans Limbu', sans-serif;;
+   background-color: white;
+   width: 238px;
+   text-align: center;
+   font-size: 24px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 70px;
+}
+
+.para1{
+    color: white;
+    background: #242834;
+    width: 545px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder                 ;
+    border-radius: 25px;
+    margin-left: 70px;
+    margin-top: 60px;
+    padding: 23px;
+}
+
+
+/* Section: For Mobile */
+@media (max-width: 950px){
+    .para1{
+        width: 90%;
+        font-size: 15px;
+        margin-left: 15px;
+        margin-top: 30px;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .about-us .title1{
+        font-family: 'Noto Sans Limbu', sans-serif;;
+        background-color: white;
+        width: 150px;
+        text-align: center;
+        font-size: 16px;
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+         padding: 5px 10px;
+         margin-left: 15px;
+     }
+}
