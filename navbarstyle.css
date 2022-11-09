@@ -59,7 +59,7 @@ header{
     background-color: white;
 }
 
-@media (max-width:800px){
+@media (max-width:850px){
     .logo{
         margin-left: -45px;
     }
