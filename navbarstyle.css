@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 20px;
 }
 
 .nav-menu{
@@ -60,9 +60,6 @@ header{
 }
 
 @media (max-width:850px){
-    .logo{
-        margin-left: -45px;
-    }
     .hamburger{
         display: block;
     }
@@ -79,7 +76,7 @@ header{
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 83px;
         gap: 0;
         flex-direction: column;
         background-color: #262626;
