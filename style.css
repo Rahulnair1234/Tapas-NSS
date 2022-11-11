@@ -203,7 +203,7 @@ video {
   background: #feac5e; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
   background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
-  height: 75vh;
+  height: 400px;
   width: 100vw;
 }
 .sponsers-block {
