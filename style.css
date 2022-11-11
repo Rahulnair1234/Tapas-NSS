@@ -80,9 +80,10 @@ video {
 
 /* Rahul */
 .team-container-block {
-  background: #feac5e; /* fallback for old browsers */
+  background-color: black;
+  /* background: #feac5e;
   background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
-  background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
+  background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e); */
   font-size: 2rem;
   padding: 10px;
   position: relative;
@@ -205,6 +206,7 @@ video {
   background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
   height: 75vh;
   width: 100vw;
+  
 }
 .sponsers-block {
   display: flex;

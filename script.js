@@ -1,3 +1,4 @@
+//For Hamburger Menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", () => {
@@ -9,6 +10,7 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.remove("active");
   }))
 
+//To check max-width of the device
   function maxWidthFunction(width) {
     if (width.matches) { 
       return true
@@ -21,9 +23,10 @@ hamburger.addEventListener("click", () => {
   let forMobile = maxWidthFunction(width) 
   width.addListener(maxWidthFunction)
   
-  let mybutton = document.getElementById("myBtn");
 
 
+//Scroll to top button
+let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -35,7 +38,19 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  // document.body.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
+  // behavior: "smooth";
+  $("html, body").animate({scrollTop:0}, "slow")
 }
+
+//Navigation smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+  anchor.addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior : "smooth"
+    })
+  })
+})
 
