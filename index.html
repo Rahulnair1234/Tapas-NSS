@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="glider.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Limbu&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="material-icons" style="padding: 13px 0;">arrow_upward</i>
+    </button>
     <header>
       <nav class="navbar">
         <div class="hamburger">
@@ -42,13 +45,13 @@
                   <a href="#event" class="nav-link">Events</a>
               </li>
               <li class="nav-item">
-                  <a href="#sponsors" class="nav-link">Sponsors</a>
+                  <a href="#sponsers" class="nav-link">Sponsors</a>
               </li>
           </ul>
           
       </nav>
   </header>
-    <div class="video-container">
+    <div class="video-container" id="home">
       <video
         src="/Videos/TAPAS final promo.mp4"
         id="bgVideo"
@@ -263,70 +266,24 @@
                             
                           </div>
                       </div>
-                      <div class="sponsers-units">
-                        <div class="sponsers-body">
-                            <div class="sponsers-img">
-                                <img src="/Images/sponser1.png" alt=""></div>
-                            
-                          </div>
-                      </div>
-                      <div class="sponsers-units">
-                        <div class="sponsers-body">
-                            <div class="sponsers-img">
-                                <img src="/Images/sponser1.png" alt=""></div>
-                            
-                          </div>
-                      </div>
-                      <div class="sponsers-units">
-                        <div class="sponsers-body">
-                            <div class="sponsers-img">
-                                <img src="/Images/sponser1.png" alt=""></div>
-                            
-                          </div>
-                      </div>
-                      <div class="sponsers-units">
-                        <div class="sponsers-body">
-                            <div class="sponsers-img">
-                                <img src="/Images/sponser1.png" alt=""></div>
-                            
-                          </div>
-                      </div>
-                      <div class="sponsers-units">
-                        <div class="sponsers-body">
-                            <div class="sponsers-img">
-                                <img src="/Images/sponser1.png" alt=""></div>
-                            
-                          </div>
-                      </div>
-                      <div class="sponsers-units">
-                        <div class="sponsers-body">
-                            <div class="sponsers-img">
-                                <img src="/Images/sponser1.png" alt=""></div>
-                            
-                          </div>
-                      </div>
-                      <div class="sponsers-units">
-                        <div class="sponsers-body">
-                            <div class="sponsers-img">
-                                <img src="/Images/sponser1.png" alt=""></div>
-                            
-                          </div>
-                      </div>
-                                                                                              
+                                                                          
                 </div>
               
                 <button aria-label="Previous" class="glider-prev"><i class="fa-solid fa-angle-left"></i></button>
                 <button aria-label="Next" class="glider-next"><i class="fa-solid fa-angle-right"></i></button>
-                <div role="tablist" class="dots"></div>
+                <div role="tablist" class="dots"></div> 
               </div>
              
         </div>
     </section>
     
-    <footer>
-      <div class="copy-right">&copy;  Tapas, Bhavans College</div>
+    <footer class="footer">
+      <div class="footer-text-container">
+        <div><a href="mailto:someone@gmail.com" target="_blank" id="mail-button">Mail us for queries</a></div>
+      <div class="copy-right">&copy; Tapas, Bhavans College 2022</div>
+      </div> 
       <div class="footer-logo">
-        <img src="/Images/Logo1.png" alt="Tapas" id="foot-logo">
+        <img src="/Images/Logo1.png" alt="">
       </div>
     </footer>
     

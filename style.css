@@ -80,9 +80,10 @@ video {
 
 /* Rahul */
 .team-container-block {
-  background: #feac5e; /* fallback for old browsers */
+  background-color: black;
+  /* background: #feac5e;
   background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
-  background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
+  background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e); */
   font-size: 2rem;
   padding: 10px;
   position: relative;
@@ -205,6 +206,7 @@ video {
   background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
   height: 400px;
   width: 100vw;
+  
 }
 .sponsers-block {
   display: flex;
@@ -247,49 +249,50 @@ video {
   width: 300px;
   border-radius: 50%;
 }
-footer {
-  background-color: #242834;
-  height: 20vh;
+
+
+.footer{
+  background: #2C3236;
+  color: white;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
 }
 
-footer .copy-right {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 0 25px;
-  width: 100%;
+#mail-button{
+  text-decoration: underline;
 }
-footer .footer-logo {
-  display: flex;
+
+.footer-logo{
   width: 100%;
+  display: flex;
   justify-content: flex-end;
 }
-footer #foot-logo {
-  height: 120px;
-  width: 120px;
+.footer-logo img{
+  width: 90px;
+  height: 90px;
 }
 
-@media (max-width: 850px) {
-  footer {
+.footer-text-container{
+  margin: 0 25px;
+}
+
+.footer-text-container div{
+  width: 230px;
+}
+
+@media (max-width: 850px){
+  .footer{
     flex-direction: column;
-    justify-content: center;
+    padding-top: 12px ;
   }
 
-  footer .footer-logo {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  footer #foot-logo {
-    height: 90px;
-    width: 90px;
-    margin-left: 0;
-  }
-
-  footer .copy-right {
+  .footer-text-container div{
     text-align: center;
+  }
+
+  .footer-logo{
+    justify-content: center;
   }
 }
